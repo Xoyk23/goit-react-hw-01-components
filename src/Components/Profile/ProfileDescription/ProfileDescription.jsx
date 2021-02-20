@@ -1,12 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import styles from './ProfileDescription.module.css';
 
 const ProfileDescription = ({ name, tag, location }) => {
   return (
-    <div>
-      <p>{name}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
+    <div className={styles.container}>
+      <p className={styles.name}>{name}</p>
+      <p className={styles.tag}>@{tag}</p>
+      <p className={styles.location}>{location}</p>
     </div>
   );
 };

@@ -1,0 +1,18 @@
+.container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.avatar {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+
+  object-fit: cover;
+  object-position: center;
+}

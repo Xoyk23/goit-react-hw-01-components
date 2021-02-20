@@ -1,11 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import defaultImage from "./defaultImage.jpg";
+import React from 'react';
+import PropTypes from 'prop-types';
+import defaultImage from './defaultImage.jpg';
+
+import styles from './ProfilePhoto.module.css';
 
 const ProfilePhoto = ({ avatar, description }) => {
   return (
-    <div>
-      <img src={avatar} alt={description} />
+    <div className={styles.container}>
+      <img src={avatar} alt={description} className={styles.avatar} />
     </div>
   );
 };

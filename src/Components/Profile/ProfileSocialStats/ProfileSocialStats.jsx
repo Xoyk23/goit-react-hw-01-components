@@ -1,21 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
+
+import styles from './ProfileSocialStats.module.css';
 
 const ProfileSocialsStats = ({ followers, views, likes }) => {
   return (
-    <ul>
-      <li>
-        <span>Followers </span>
-        <span>{followers}</span>
+    <ul className={styles.list}>
+      <li className={styles.item}>
+        <span className={styles.itemName}>Followers </span>
+        <span className={styles.itemData}>{followers}</span>
       </li>
-      <li>
-        <span>Views </span>
-        <span>{views}</span>
+      <li className={styles.item}>
+        <span className={styles.itemName}>Views </span>
+        <span className={styles.itemData}>{views}</span>
       </li>
-      <li>
-        <span>Likes </span>
-        <span>{likes}</span>
+      <li className={styles.item}>
+        <span className={styles.itemName}>Likes </span>
+        <span className={styles.itemData}>{likes}</span>
       </li>
     </ul>
   );

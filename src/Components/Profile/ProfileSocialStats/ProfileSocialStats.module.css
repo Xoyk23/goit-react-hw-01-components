@@ -1,0 +1,28 @@
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: e7e7e7;
+}
+
+.item {
+  padding: 10px;
+  width: calc(100% / 3);
+  font-size: 15px;
+  border: 1px solid darkgray;
+}
+
+.itemName {
+  display: block;
+  margin-bottom: 5px;
+
+  color: gray;
+}
+
+.itemData {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+}
