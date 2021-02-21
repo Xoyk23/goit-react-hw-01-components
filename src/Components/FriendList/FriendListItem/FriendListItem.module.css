@@ -29,3 +29,13 @@
   border-radius: 10px;
   background-color: rosybrown;
 }
+
+/* .avatar.online {
+  composes: avatar;
+  background-color: lightgreen;
+}
+
+.avatar.offline {
+  composes: avatar;
+  background-color: lightslategray;
+} */
