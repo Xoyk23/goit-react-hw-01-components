@@ -1,14 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import StatisticsListItem from "./StatisticsListItem/StatisticsListItem";
+import StatisticsListItem from './StatisticsListItem/StatisticsListItem';
 
-const Statistics = ({ title = "Upload stats", stats }) => {
+import styles from './Statistics.module.css';
+
+const Statistics = ({ title = 'Upload stats', stats }) => {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul>
-        {stats.map((stat) => (
+    <section className={styles.section}>
+      <h2 className={styles.title}>{title}</h2>
+      <ul className={styles.list}>
+        {stats.map(stat => (
           <StatisticsListItem key={stat.id} stat={stat} />
         ))}
       </ul>

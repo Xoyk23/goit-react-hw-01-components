@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  padding: 10px;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.percentage {
+  font-size: 18px;
+  margin-top: 5px;
+}
