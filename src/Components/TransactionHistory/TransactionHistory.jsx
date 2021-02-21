@@ -1,20 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import TransactionItem from "./TransationItem/TransationItem";
+import TransactionItem from './TransationItem/TransationItem';
+
+import styles from './TransactionHistory.module.css';
 
 const TransationHistory = ({ items }) => {
   return (
-    <table>
-      <thead className="Заглушка">
+    <table className={styles.table}>
+      <thead className={styles.head}>
         <tr>
-          <th className="Заглушка">Type</th>
-          <th className="Заглушка">Amount</th>
-          <th className="Заглушка">Currency</th>
+          <th className={styles.transation}>Type</th>
+          <th className={styles.transation}>Amount</th>
+          <th className={styles.transation}>Currency</th>
         </tr>
       </thead>
       <tbody>
-        {items.map((item) => (
+        {items.map(item => (
           <TransactionItem
             key={item.id}
             type={item.type}

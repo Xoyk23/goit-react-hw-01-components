@@ -1,12 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import styles from './TransationItem.module.css';
 
 const TransactionItem = ({ type, amount, currency }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+    <tr className={styles.row}>
+      <td className={styles.transaction}>{type}</td>
+      <td className={styles.transaction}>{amount}</td>
+      <td className={styles.transaction}>{currency}</td>
     </tr>
   );
 };
